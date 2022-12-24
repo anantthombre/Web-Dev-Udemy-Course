@@ -1,0 +1,32 @@
+.FirstDiv{
+    color: red;
+}
+
+.SecondDiv{
+    color: blue;
+}
+
+#singleout{
+    color: green;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+
+/* *{
+    background: url(https://developer.mozilla.org/assets/mdn_contributor.png);
+} */
+
+h3 + ul{
+    color: magenta;
+    border: 3px dotted orange;
+}
+
+li a{
+    clip: purple;
+}
+
+li a[href="www.npr.com"]{
+    color: aqua;
+    background-color: blueviolet;
+    border: 2px double saddlebrown;
+}
