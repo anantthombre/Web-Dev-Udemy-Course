@@ -1,0 +1,24 @@
+/* This is a comment */
+
+
+body{
+    /* background-color: grey; */
+    background: url(https://media.cntraveler.com/photos/61eae28b9580ae68b5219061/master/w_1280%2Cc_limit/Bermuda_GettyImages-1159363129.jpg);
+    background-repeat: repeat;
+}
+
+p{
+    color: yellow;
+}
+
+div{
+    background-color: blue;
+    border-color: orange;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+span{
+    background-color: brown;
+}
+
