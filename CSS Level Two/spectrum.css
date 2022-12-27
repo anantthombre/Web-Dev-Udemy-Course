@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+    font-family: 'Rubik Gemstones';
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+/* #one{
+    background-color: #FFBE0B;
+    padding: 60px 60px 300px 60px;
+    border-right: 10px solid white;
+}
+
+#two{
+    background-color: #FB5607;
+    padding: 60px 60px 300px 60px;
+    border-right: 10px solid white;
+}
+
+#three{
+    background-color: #FF006E;
+    padding: 60px 60px 300px 60px;
+    border-right: 10px solid white;
+}
+
+#four{
+    background-color: #8338EC;
+    padding: 60px 60px 300px 60px;
+    border-right: 10px solid white;
+}
+
+#five{
+    background-color: #3A86FF;
+    padding: 60px 60px 300px 60px;
+}
+
+*/
+
+table{
+    margin: auto;
+} 
+
+
+td{
+    background-color: black;
+    height: 400px;
+    width: 150px;
+    border-right: 10px solid white;
+}
+
+#one{
+    background-color: #FFBE0B;
+}
+
+#two{
+    background-color: #FB5607;
+}
+
+#three{
+    background-color: #FF006E;
+}
+
+#four{
+    background-color: #8338EC;
+}
+
+#five{
+    background-color: #3A86FF;
+}
