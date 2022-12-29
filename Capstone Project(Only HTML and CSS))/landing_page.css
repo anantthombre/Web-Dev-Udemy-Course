@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+    font-size: large;
+    background-color: #011627;
+    color: white;
+    border: 50px solid #2EC4B6;
+    border-top: 0px;
+}
+
+.land_para{
+    width: 600px;
+    height: 100px;
+    margin: auto;
+}
+
+
+.form_p{
+    /* border: 1px solid black; */
+    margin: 0% 0% 0% 0%;
+}
+
+/* #f_name{
+    border: 1px solid black;
+    margin-bottom: 0%;
+} */
+
+/* #fname{
+    margin-top: 0%;
+}
+
+#lname{
+    margin-bottom: 0%;
+} */
+
+
+#submit_button{
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    background-color: #FF9F1C;
+}
+
+
+.inputs{
+    width: 250px;
+    height: 30px;
+}
+
+
+#f_headtwo{
+    margin-bottom: 10%;
+    /* color: blue; */
+}
+
+#first_para{
+    margin-bottom: 3%;
+}
+
+#sign_header{
+    margin-bottom: 5%;
+}
