@@ -56,3 +56,60 @@ undefined
 18%4
 2
 clear()
+//Strings
+undefined
+"Django is cool"
+'Django is cool'
+"Django" + "is super cool."
+'Djangois super cool.'
+"Django" + " is super cool."
+'Django is super cool.'
+"django".length
+6
+"p p".length
+3
+"start \n new line"
+'start \n new line'
+"Hello \n start a new line"
+'Hello \n start a new line'
+"Hello \t give me a tab"
+'Hello \t give me a tab'
+"hello \"quotes\""
+'hello "quotes"'
+"hello \n start new line"
+'hello \n start new line'
+"hello \" jelly"
+'hello " jelly'
+"heeello"[0]
+'h'
+"look at the dog"[12]
+'d'
+//VARIALES
+undefined
+var bankAccount = 100;
+undefined
+bankAccount
+100
+var deposit = 50
+undefined
+var = bankAccount + deposit
+VM490:1 Uncaught SyntaxError: Unexpected token '='
+var total = bankAccount + deposit
+undefined
+total
+150
+var greeting "Welcome"
+VM644:1 Uncaught SyntaxError: Unexpected string
+var greeting = "Welcome"
+undefined
+var name = "Anant"
+undefined
+alert(greeting+name;)
+VM838:1 Uncaught SyntaxError: missing ) after argument list
+alert(greeting+name);
+undefined
+by MyVariable
+VM931:1 Uncaught SyntaxError: Unexpected identifier 'MyVariable'
+
+var age = prompt("Please enter your age");
+undefined
