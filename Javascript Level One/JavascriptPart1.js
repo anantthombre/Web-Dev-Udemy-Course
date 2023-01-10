@@ -113,3 +113,6 @@ VM931:1 Uncaught SyntaxError: Unexpected identifier 'MyVariable'
 
 var age = prompt("Please enter your age");
 undefined
+console.log("Hey, I am in the console!!!")
+VM178:1 Hey, I am in the console!!!
+undefined
