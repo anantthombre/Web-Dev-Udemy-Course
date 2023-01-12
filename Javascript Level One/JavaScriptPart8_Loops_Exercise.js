@@ -13,7 +13,7 @@
 // Do this with a While Loop and a For Loop
 
 // While Loop
-i =0;
+var i = 0;
 while (i < 5) {
     console.log("Hello");
     i++;
@@ -21,7 +21,7 @@ while (i < 5) {
 
 // For Loop
 
-for (i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
     console.log("Hello");
 }
 
@@ -36,7 +36,7 @@ for (i = 0; i < 5; i++) {
 
 // METHOD ONE
 // While Loop
-i = 1;
+var i = 1;
 
 while (i <= 25) {
     console.log(i);
@@ -46,7 +46,7 @@ while (i <= 25) {
 // METHOD TWO
 // For Loop
 
-for (i = 1; i <= 25; i += 2) {
+for (var i = 1; i <= 25; i += 2) {
     console.log(i);
 }
 
