@@ -14,3 +14,11 @@ x.css("color", "red")
 jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
 x.css("background", "blue")
 jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+var newCSS = {
+    "color" : "white",
+    'backgroud' : 'blue',
+    'border' : 'red'
+}
+undefined
+x.css(newCSS)
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
