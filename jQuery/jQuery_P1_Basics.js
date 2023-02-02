@@ -54,3 +54,23 @@ $('input').eq(1).attr('type', 'checkbox')
 jQuery.fn.init [input, prevObject: jQuery.fn.init(2)]
 $('input').eq(0).val('new value!')
 jQuery.fn.init [input, prevObject: jQuery.fn.init(2)]
+$('h1').addClass('turnRed')
+jQuery.fn.init [h1.turnRed, prevObject: jQuery.fn.init(1)]
+$('h1').removeClass('turnRed')
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1.turnBlue, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1.turnBlue, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1.turnBlue, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1.turnBlue, prevObject: jQuery.fn.init(1)]
+$('h1').toggleClass('turnBlue')
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
