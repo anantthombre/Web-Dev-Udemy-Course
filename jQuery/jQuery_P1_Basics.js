@@ -40,3 +40,17 @@ listItems.eq(0).css('color', 'orange')
 jQuery.fn.init [li, prevObject: jQuery.fn.init(6)]
 listItems.eq(-1).css('color','orange')
 jQuery.fn.init [li#special, prevObject: jQuery.fn.init(6)]
+$('h1').text()
+'Selecting with jQuery'
+$('h1').text("Brand new text!")
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('h1').html()
+'Brand new text!'
+$('h1').html("<em>new</em>")
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$('input')
+jQuery.fn.init(2) [input, input, prevObject: jQuery.fn.init(1)]
+$('input').eq(1).attr('type', 'checkbox')
+jQuery.fn.init [input, prevObject: jQuery.fn.init(2)]
+$('input').eq(0).val('new value!')
+jQuery.fn.init [input, prevObject: jQuery.fn.init(2)]
