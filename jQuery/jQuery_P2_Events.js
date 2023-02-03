@@ -1,3 +1,3 @@
-$('h1').click(fucntion (){
-    console.log("There is an click on h1 tag");
+$('h1').click(function () {
+    console.log("There was a click on h1 tag.");
 })
