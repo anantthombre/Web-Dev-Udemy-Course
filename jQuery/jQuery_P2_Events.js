@@ -9,3 +9,9 @@ $('li').click(function () {
 $("h1").click(function () {
     $(this).text("I was changed");
 })
+
+//KEY PRESS
+$('input').eq(0).keypress(function (event) {
+    $('h3').toggleClass('turnBlue');
+    console.log(event);
+})
