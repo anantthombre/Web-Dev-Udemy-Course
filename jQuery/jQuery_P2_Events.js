@@ -5,3 +5,7 @@ $('h1').click(function () {
 $('li').click(function () {
     console.log("Any of the list item was clicked.");
 })
+
+$("h1").click(function () {
+    $(this).text("I was changed");
+})
