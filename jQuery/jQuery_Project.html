@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jQuery_Project.js"></script>
     <title>Connect Four</title>
 </head>
-<body>
-    
+<body class="bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900">
+    <div class="container" align="center">
+        <h1 class="text-3xl font-extrabold md:text-5xl lg:text-6xl">Welcome to Connect Four!</h1>
+        <h2 class="text-2xl font-bold md:text-4xl lg:text-5xl">Connect four chips to win!</h2>
+        <h3 class="text-xl font-bold md:text-3xl lg:text-4xl">Let's get started!</h3>
+
+        <table class="board">
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+            <tr>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+                <td><button class="w-32 h-32 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800" type="button"></button></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
