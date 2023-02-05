@@ -8,3 +8,21 @@ var player2ColorClass = "p-1 w-24 h-24 rounded-full bg-gradient-to-bl from-red-9
 var game_on = true;
 var table = $("table tr");
 
+
+// To report the win in the console tab
+function reportWin(rowNum, colNum) {
+    console.log("You won starting at this row,col");
+    console.log(rowNum);
+    console.log(colNum);
+}
+
+// To change the color
+function changeColor(rowIndex, colIndex, colorClass) {
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").getClass(colorClass);
+}
+
+
+// To report the color of the cell
+function reportColor(rowIndex,colIndex) {
+    
+}
