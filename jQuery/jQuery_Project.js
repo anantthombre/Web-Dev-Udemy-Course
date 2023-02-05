@@ -18,11 +18,11 @@ function reportWin(rowNum, colNum) {
 
 // To change the color
 function changeColor(rowIndex, colIndex, colorClass) {
-    return table.eq(rowIndex).find("td").eq(colIndex).find("button").getClass(colorClass);
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").toggleClass(colorClass);
 }
 
 
 // To report the color of the cell
 function reportColor(rowIndex,colIndex) {
-    
+    return table.eq(rowIndex).find("td").eq(colIndex).find("button").attr("class")
 }
