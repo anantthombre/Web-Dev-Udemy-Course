@@ -4,7 +4,7 @@ var player1ColorClass = "p-1 w-24 h-24 rounded-full bg-gradient-to-bl from-blue-
 var player2 = prompt("Player Two: Enter Your Name, You Will Be Red");
 var player2ColorClass = "p-1 w-24 h-24 rounded-full bg-gradient-to-bl from-red-900 via-red-400 to-red-900";
 
-//Current color of the cell
+//Current color class of the cell
 var initialColorClass = "p-1 w-24 h-24 rounded-full bg-gradient-to-bl from-indigo-800 via-indigo-300 to-indigo-800";
 
 var game_on = true;
