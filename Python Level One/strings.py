@@ -27,3 +27,12 @@ print(my_string.split())
 print(my_string.split("e"))
 
 #Print Formatting
+
+x = "Insert another string here. {}".format("Insert Me!")
+print(x)
+
+y = "Item One: {}. Item Two: {}".format("apple", "orange")
+print(y)
+
+z = "Item Three: {b}. Item Four: {a}".format(a = "rasberry", b = "mulberry")
+print(z)
