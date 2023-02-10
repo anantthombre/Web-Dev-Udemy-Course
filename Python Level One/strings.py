@@ -18,4 +18,12 @@ print(my_string[::2])
 print(my_string[1:6:2])
 
 #Basic Methods
+
+print(my_string.upper())
+print(my_string.lower())
+print(my_string.capitalize())
+my_string = "Hello World"
+print(my_string.split())
+print(my_string.split("e"))
+
 #Print Formatting
