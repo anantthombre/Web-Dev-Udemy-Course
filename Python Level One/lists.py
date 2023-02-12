@@ -48,3 +48,18 @@ print(my_list)
 
 my_list.sort()
 print(my_list)
+
+#List Indexing
+
+my_list = [1, 2, ["x", "y", "z"]]
+print(my_list)
+print(my_list[2])
+print(my_list[2][1])
+
+#List Comprehension
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix)
+
+first_col = [row[0] for row in matrix]
+print(first_col)
