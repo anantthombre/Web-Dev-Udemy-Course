@@ -93,10 +93,15 @@ print("Q3: ",end_other('abc', 'abXabc'))
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-def doubleChar(str):
+def doubleChar(my_str):
   # CODE GOES HERE
-  pass
+    result = ""
+    for i in my_str:
+        result = result + i*2
 
+    return result    
+
+print("Q4: ",doubleChar('Hi-There'))
 
 #####################
 ## -- PROBLEM 5 -- ##
@@ -121,10 +126,16 @@ def doubleChar(str):
 
 def no_teen_sum(a, b, c):
   # CODE GOES HERE
-  pass
+    return fix_teen(a) + fix_teen(b) +fix_teen(c)
+
 def fix_teen(n):
   # CODE GOES HERE
-  pass
+    if n in [13, 14, 17, 18, 19]:
+        return 0
+    else:
+        return n
+
+print("Q5: Sum is: ", no_teen_sum(2, 1, 15))
 
 #####################
 ## -- PROBLEM 6 -- ##
