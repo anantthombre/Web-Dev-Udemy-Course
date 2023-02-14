@@ -22,8 +22,15 @@
 
 def arrayCheck(nums):
     # CODE GOES HERE
-    for k in nums:
-        pass
+    for k in range(len(nums)-2):
+        if nums[k] == 1 and nums[k+1] == 2 and nums[k+2] == 3:
+            return True
+    return False
+
+print("Q1. ",arrayCheck([1, 1, 2, 1, 2, 3]))
+
+
+        
 
 
 #####################
@@ -66,7 +73,13 @@ print("Q2: Created string is", stringBits("Heeololeo"))
 
 def end_other(a, b):
   # CODE GOES HERE
-  pass
+    if a[(-len(b)):] == b or b[(-len(a)):] == a:
+        return True
+    return False
+
+print("Q3: ",end_other('abc', 'abXabc'))
+ 
+
 
 
 #####################
