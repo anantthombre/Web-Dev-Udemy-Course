@@ -24,3 +24,15 @@ def greet():
     hello()
     
 greet()
+print(name)
+
+x = 50
+
+def func():
+    # global x # it is used to when global variable needs to be reassigned inside a function. It is not reccomneded to directly reassign a global variable inside a function. You can reassign it outside the function. example --> x = func()
+    x = 1000
+    return x
+
+print("before func call, x is: ", x)
+x = func()
+print("after func call, x is: ", x)
