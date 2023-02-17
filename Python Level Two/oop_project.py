@@ -32,7 +32,7 @@ from random import shuffle
 SUITE = 'H D S C'.split()
 RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
-my_cards = [(s,r) for s in SUITE for r in RANKS]
+#my_cards = [(s,r) for s in SUITE for r in RANKS]
 
 class Deck:
     """
@@ -88,11 +88,14 @@ class Player:
 
     def remove_war_cards(self):
         war_cards = []
-        for x in range(3):
-            war_cards.append(self.hand.remove_card())
-        return war_cards
+        if len(self.hand.cards) < 3:
+            return war_cards
+        else:    
+            for x in range(3):
+                war_cards.append(self.hand.remove_card())
+            return war_cards
 
-    def still_has_cards():
+    def still_has_cards(self):
         """
         Return True if player still has cards left
         """
@@ -126,8 +129,8 @@ while user.still_has_cards() and comp.still_has_cards():
     total_rounds += 1
     print("Time for a new round!")
     print("Here are the current standings")
-    print(user.name + "has the count: " + str(len(comp.hand.cards)))
-    print(comp.name + "has the count: " + str(len(comp.hand.cards)))
+    print(user.name + " has the count: " + str(len(comp.hand.cards)))
+    print(comp.name + " has the count: " + str(len(comp.hand.cards)))
     print("\n")
 
 
@@ -138,6 +141,49 @@ while user.still_has_cards() and comp.still_has_cards():
 
     table_cards.append(c_card)
 
-# Use the 3 classes along with some logic to play a game of war!
+    # Check for War
+
+    if c_card[1] == p_card[1]:
+        war_count += 1
+
+        print("War!!!")
+
+        table_cards.extend(user.remove_war_cards())
+        table_cards.extend(comp.remove_war_cards())
+
+        # Play cards
+        c_card = comp.play_card()
+        p_card = user.play_card()
+
+        # Add to table_cards
+        table_cards.append(c_card)
+        table_cards.append(p_card)
+
+        if RANKS.index(c_card[1]) < RANKS.index(p_card[1]):
+            print(user.name+" has the higher card, adding to hand.")
+            user.hand.add(table_cards)
+        else:
+            print(comp.name+" has the higher card, adding to hand.")
+            comp.hand.add(table_cards)
+
+
+    else:
+        if RANKS.index(c_card[1]) < RANKS.index(p_card[1]):
+            print(user.name+" has the higher card, adding to hand.")
+            user.hand.add(table_cards)
+        else:
+            print(comp.name+" has the higher card, adding to hand.")
+            comp.hand.add(table_cards)
+
+
+print("Game Over, number of rounds: "+ str(total_rounds))
+print("A war happened " + str(war_count) + " times")
+
+print("Does the computer still have cards? ")
+print(str(comp.still_has_cards()))
+
+print("Does the human player still have cards? ")
+print(str(user.still_has_cards()))
+
 
 
