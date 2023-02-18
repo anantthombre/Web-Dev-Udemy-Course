@@ -57,6 +57,35 @@ test_patterns = ["sd{1,3}"]
 
 multi_re_find(test_patterns, test_phrase)
 
-test_patterns = ["sd[sd+]"]
+test_patterns = ["s[sd+]"]
+
+multi_re_find(test_patterns, test_phrase)
+
+test_phrase = "This is a string! but the punctiuation. How can we remove it?"
+
+test_patterns =["[^!.?+]"]
+
+multi_re_find(test_patterns, test_phrase)
+
+test_patterns =["[a-z]+"]
+
+multi_re_find(test_patterns, test_phrase)
+
+test_patterns =["[A-Z]+"]
+
+multi_re_find(test_patterns, test_phrase)
+
+test_patterns = [r"\d+"]
+
+multi_re_find(test_patterns, test_phrase)
+
+
+test_patterns = [r"\s+"]
+
+multi_re_find(test_patterns, test_phrase)
+
+test_phrase = "This is a string with numbers 12223434 and a symbol #hastag"
+
+test_patterns = [r"\W]+"]
 
 multi_re_find(test_patterns, test_phrase)
