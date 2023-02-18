@@ -56,3 +56,7 @@ multi_re_find(test_patterns, test_phrase)
 test_patterns = ["sd{1,3}"]
 
 multi_re_find(test_patterns, test_phrase)
+
+test_patterns = ["sd[sd+]"]
+
+multi_re_find(test_patterns, test_phrase)
