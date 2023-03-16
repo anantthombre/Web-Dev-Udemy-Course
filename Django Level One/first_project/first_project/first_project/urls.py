@@ -20,6 +20,6 @@ from first_app import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('new/',include(first_app.urls)),
+    path('new_extension/',include('first_app.urls')),
     path('admin/', admin.site.urls),
 ]
