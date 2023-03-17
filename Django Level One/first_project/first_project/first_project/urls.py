@@ -20,6 +20,6 @@ from first_app import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('new_extension/',include('first_app.urls')),
+    path('new_extension/',include('first_app.urls')), #created new_extension for app in the url 
     path('admin/', admin.site.urls),
 ]
