@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # print(BASE_DIR)
 # print(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
-print(TEMPLATE_DIR)
+# print(TEMPLATE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
