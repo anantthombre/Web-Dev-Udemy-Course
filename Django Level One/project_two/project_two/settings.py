@@ -17,7 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 # print(Path(__file__).resolve())
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
-print(TEMPLATE_DIR)
+# print(TEMPLATE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'project_two.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
