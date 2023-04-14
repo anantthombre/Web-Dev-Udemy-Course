@@ -32,6 +32,12 @@ def populate(N=5):
         acc_rec = AccessRecord.objects.get_or_create(name = webpg, date = fake_date)[0] # Created a fake access data for that webpage
 
 
+if __name__ == "__main__":
+    print("populating script")
+    populate(20)
+    print("populating compelete")
+
+
 
 
 
