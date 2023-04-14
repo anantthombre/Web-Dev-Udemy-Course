@@ -27,5 +27,14 @@ def populate(N=5):
         fake_date = fakegen.date()
         fake_name = fakegen.company()
 
+        webpg = Webpage.objects.get_or_create(topic = top, url = fake_url, name = fake_name)[0]  # Create the new webpage entry
 
-        
+        acc_rec = AccessRecord.objects.get_or_create(name = webpg, date = fake_date)[0] # Created a fake access data for that webpage
+
+
+
+
+
+
+
+
