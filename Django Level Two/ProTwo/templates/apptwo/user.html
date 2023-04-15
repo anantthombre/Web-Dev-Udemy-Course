@@ -12,16 +12,17 @@
     {% if users %}
         <ol>
             {% for person in users %}
-                <ul>
-                    <li>First Name: {{ person.first_name }}</li>
-                    <li>Last Name: {{ person.last_name }}</li>
-                    <li>Email: {{ person.email }}</li>
-                </ul>
+                <li>User Info</li>
+                    <ul>
+                        <li>First Name: {{ person.first_name }}</li>
+                        <li>Last Name: {{ person.last_name }}</li>
+                        <li>Email: {{ person.email }}</li>
+                    </ul>
             {% endfor %}
         </ol>
     {% else %}
         <p>NO Users Found</p>
-    {% end if %}
+    {% endif %}
 
 </body>
 </html>
